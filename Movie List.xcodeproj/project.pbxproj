@@ -30,6 +30,7 @@
 		11B64088244677BB006A1F04 /* IModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64084244677BB006A1F04 /* IModule.swift */; };
 		11B6408C2446781E006A1F04 /* GenreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6408B2446781E006A1F04 /* GenreModels.swift */; };
 		11B6408E244678AA006A1F04 /* MovieListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6408D244678AA006A1F04 /* MovieListModels.swift */; };
+		11B6409024467AE4006A1F04 /* VideosModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6408F24467AE4006A1F04 /* VideosModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		11B64084244677BB006A1F04 /* IModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IModule.swift; sourceTree = "<group>"; };
 		11B6408B2446781E006A1F04 /* GenreModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreModels.swift; sourceTree = "<group>"; };
 		11B6408D244678AA006A1F04 /* MovieListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModels.swift; sourceTree = "<group>"; };
+		11B6408F24467AE4006A1F04 /* VideosModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			children = (
 				11B6408B2446781E006A1F04 /* GenreModels.swift */,
 				11B6408D244678AA006A1F04 /* MovieListModels.swift */,
+				11B6408F24467AE4006A1F04 /* VideosModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				11B6408C2446781E006A1F04 /* GenreModels.swift in Sources */,
 				11B64074244667AE006A1F04 /* Extension+UIImageView.swift in Sources */,
 				11B6406E244667AE006A1F04 /* Extension+String.swift in Sources */,
+				11B6409024467AE4006A1F04 /* VideosModels.swift in Sources */,
 				11B64085244677BB006A1F04 /* AppRouter.swift in Sources */,
 				11B64072244667AE006A1F04 /* Extension+UIApplication.swift in Sources */,
 				11B64071244667AE006A1F04 /* Extension+UITableViewCell.swift in Sources */,

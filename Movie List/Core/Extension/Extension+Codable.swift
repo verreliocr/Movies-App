@@ -25,3 +25,12 @@ extension Encodable {
         return nil
     }
 }
+
+protocol CaseIterableDefaultsLast: Decodable & CaseIterable & RawRepresentable
+where Self.RawValue: Decodable, Self.AllCases: BidirectionalCollection { }
+
+extension CaseIterableDefaultsLast {
+    init(from decoder: Decoder) throws {
+        self = try Self(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? Self.allCases.last!
+    }
+}
