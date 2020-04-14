@@ -10,6 +10,14 @@
 		11348ABB24466547002F47F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11348ABA24466547002F47F2 /* AppDelegate.swift */; };
 		11348AC42446654C002F47F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11348AC32446654C002F47F2 /* Assets.xcassets */; };
 		11348AC72446654C002F47F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11348AC52446654C002F47F2 /* LaunchScreen.storyboard */; };
+		11B6406D244667AE006A1F04 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64065244667AE006A1F04 /* Extension+UIViewController.swift */; };
+		11B6406E244667AE006A1F04 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64066244667AE006A1F04 /* Extension+String.swift */; };
+		11B6406F244667AE006A1F04 /* Extension+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64067244667AE006A1F04 /* Extension+Codable.swift */; };
+		11B64070244667AE006A1F04 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64068244667AE006A1F04 /* Extension+UIView.swift */; };
+		11B64071244667AE006A1F04 /* Extension+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64069244667AE006A1F04 /* Extension+UITableViewCell.swift */; };
+		11B64072244667AE006A1F04 /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6406A244667AE006A1F04 /* Extension+UIApplication.swift */; };
+		11B64073244667AE006A1F04 /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6406B244667AE006A1F04 /* Extension+UITableView.swift */; };
+		11B64074244667AE006A1F04 /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6406C244667AE006A1F04 /* Extension+UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +26,14 @@
 		11348AC32446654C002F47F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11348AC62446654C002F47F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11348AC82446654C002F47F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11B64065244667AE006A1F04 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		11B64066244667AE006A1F04 /* Extension+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		11B64067244667AE006A1F04 /* Extension+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Codable.swift"; sourceTree = "<group>"; };
+		11B64068244667AE006A1F04 /* Extension+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		11B64069244667AE006A1F04 /* Extension+UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UITableViewCell.swift"; sourceTree = "<group>"; };
+		11B6406A244667AE006A1F04 /* Extension+UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
+		11B6406B244667AE006A1F04 /* Extension+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
+		11B6406C244667AE006A1F04 /* Extension+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +66,52 @@
 		11348AB924466547002F47F2 /* Movie List */ = {
 			isa = PBXGroup;
 			children = (
+				11B640602446674F006A1F04 /* Core */,
 				11348ABA24466547002F47F2 /* AppDelegate.swift */,
 				11348AC32446654C002F47F2 /* Assets.xcassets */,
 				11348AC52446654C002F47F2 /* LaunchScreen.storyboard */,
 				11348AC82446654C002F47F2 /* Info.plist */,
 			);
 			path = "Movie List";
+			sourceTree = "<group>";
+		};
+		11B640602446674F006A1F04 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				11B6406124466757006A1F04 /* Extension */,
+				11B640632446676C006A1F04 /* Network */,
+				11B6406424466774006A1F04 /* Routers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		11B6406124466757006A1F04 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				11B64067244667AE006A1F04 /* Extension+Codable.swift */,
+				11B64066244667AE006A1F04 /* Extension+String.swift */,
+				11B6406A244667AE006A1F04 /* Extension+UIApplication.swift */,
+				11B6406C244667AE006A1F04 /* Extension+UIImageView.swift */,
+				11B6406B244667AE006A1F04 /* Extension+UITableView.swift */,
+				11B64069244667AE006A1F04 /* Extension+UITableViewCell.swift */,
+				11B64068244667AE006A1F04 /* Extension+UIView.swift */,
+				11B64065244667AE006A1F04 /* Extension+UIViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		11B640632446676C006A1F04 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		11B6406424466774006A1F04 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B6406F244667AE006A1F04 /* Extension+Codable.swift in Sources */,
+				11B6406D244667AE006A1F04 /* Extension+UIViewController.swift in Sources */,
+				11B64070244667AE006A1F04 /* Extension+UIView.swift in Sources */,
 				11348ABB24466547002F47F2 /* AppDelegate.swift in Sources */,
+				11B64074244667AE006A1F04 /* Extension+UIImageView.swift in Sources */,
+				11B6406E244667AE006A1F04 /* Extension+String.swift in Sources */,
+				11B64072244667AE006A1F04 /* Extension+UIApplication.swift in Sources */,
+				11B64071244667AE006A1F04 /* Extension+UITableViewCell.swift in Sources */,
+				11B64073244667AE006A1F04 /* Extension+UITableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
