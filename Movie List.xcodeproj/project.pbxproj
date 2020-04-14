@@ -29,6 +29,7 @@
 		11B64087244677BB006A1F04 /* FeatureModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64083244677BB006A1F04 /* FeatureModule.swift */; };
 		11B64088244677BB006A1F04 /* IModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64084244677BB006A1F04 /* IModule.swift */; };
 		11B6408C2446781E006A1F04 /* GenreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6408B2446781E006A1F04 /* GenreModels.swift */; };
+		11B6408E244678AA006A1F04 /* MovieListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6408D244678AA006A1F04 /* MovieListModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		11B64083244677BB006A1F04 /* FeatureModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureModule.swift; sourceTree = "<group>"; };
 		11B64084244677BB006A1F04 /* IModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IModule.swift; sourceTree = "<group>"; };
 		11B6408B2446781E006A1F04 /* GenreModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreModels.swift; sourceTree = "<group>"; };
+		11B6408D244678AA006A1F04 /* MovieListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				11B6408B2446781E006A1F04 /* GenreModels.swift */,
+				11B6408D244678AA006A1F04 /* MovieListModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				11B6407C24466820006A1F04 /* EndPoint.swift in Sources */,
 				11B64087244677BB006A1F04 /* FeatureModule.swift in Sources */,
 				11B6408024466820006A1F04 /* Reachability.swift in Sources */,
+				11B6408E244678AA006A1F04 /* MovieListModels.swift in Sources */,
 				11B6407B24466820006A1F04 /* HandleError.swift in Sources */,
 				11B64086244677BB006A1F04 /* IRouter.swift in Sources */,
 				11B6408C2446781E006A1F04 /* GenreModels.swift in Sources */,

@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-//enum FeatureModule {
-//
-//    func create(using router: IRouter) -> IModule {
-//        switch self {
-//        }
-//    }
-//}
+enum FeatureModule {
+
+    func create(using router: IRouter) -> IModule {
+        switch self {
+        }
+    }
+}

@@ -19,8 +19,8 @@ private extension GenreModel {
 }
 
 struct GenreModelItems: Codable {
-    var id: String
-    var name: String
+    var id: String?
+    var name: String?
 }
 
 private extension GenreModelItems {
