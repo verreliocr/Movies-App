@@ -28,6 +28,7 @@
 		11B64086244677BB006A1F04 /* IRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64082244677BB006A1F04 /* IRouter.swift */; };
 		11B64087244677BB006A1F04 /* FeatureModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64083244677BB006A1F04 /* FeatureModule.swift */; };
 		11B64088244677BB006A1F04 /* IModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64084244677BB006A1F04 /* IModule.swift */; };
+		11B6408C2446781E006A1F04 /* GenreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6408B2446781E006A1F04 /* GenreModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		11B64082244677BB006A1F04 /* IRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRouter.swift; sourceTree = "<group>"; };
 		11B64083244677BB006A1F04 /* FeatureModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureModule.swift; sourceTree = "<group>"; };
 		11B64084244677BB006A1F04 /* IModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IModule.swift; sourceTree = "<group>"; };
+		11B6408B2446781E006A1F04 /* GenreModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				11B640602446674F006A1F04 /* Core */,
+				11B6408A244677EE006A1F04 /* Models */,
+				11B64089244677E4006A1F04 /* Features */,
 				11348ABA24466547002F47F2 /* AppDelegate.swift */,
 				11348AC32446654C002F47F2 /* Assets.xcassets */,
 				11348AC52446654C002F47F2 /* LaunchScreen.storyboard */,
@@ -142,6 +146,21 @@
 				11B64082244677BB006A1F04 /* IRouter.swift */,
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		11B64089244677E4006A1F04 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		11B6408A244677EE006A1F04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11B6408B2446781E006A1F04 /* GenreModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +246,7 @@
 				11B6408024466820006A1F04 /* Reachability.swift in Sources */,
 				11B6407B24466820006A1F04 /* HandleError.swift in Sources */,
 				11B64086244677BB006A1F04 /* IRouter.swift in Sources */,
+				11B6408C2446781E006A1F04 /* GenreModels.swift in Sources */,
 				11B64074244667AE006A1F04 /* Extension+UIImageView.swift in Sources */,
 				11B6406E244667AE006A1F04 /* Extension+String.swift in Sources */,
 				11B64085244677BB006A1F04 /* AppRouter.swift in Sources */,
