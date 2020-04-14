@@ -18,6 +18,12 @@
 		11B64072244667AE006A1F04 /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6406A244667AE006A1F04 /* Extension+UIApplication.swift */; };
 		11B64073244667AE006A1F04 /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6406B244667AE006A1F04 /* Extension+UITableView.swift */; };
 		11B64074244667AE006A1F04 /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6406C244667AE006A1F04 /* Extension+UIImageView.swift */; };
+		11B6407B24466820006A1F04 /* HandleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6407524466820006A1F04 /* HandleError.swift */; };
+		11B6407C24466820006A1F04 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6407624466820006A1F04 /* EndPoint.swift */; };
+		11B6407D24466820006A1F04 /* IRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6407724466820006A1F04 /* IRequest.swift */; };
+		11B6407E24466820006A1F04 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6407824466820006A1F04 /* HTTPRequest.swift */; };
+		11B6407F24466820006A1F04 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6407924466820006A1F04 /* HTTPMethod.swift */; };
+		11B6408024466820006A1F04 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6407A24466820006A1F04 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		11B6406A244667AE006A1F04 /* Extension+UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
 		11B6406B244667AE006A1F04 /* Extension+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
 		11B6406C244667AE006A1F04 /* Extension+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
+		11B6407524466820006A1F04 /* HandleError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleError.swift; sourceTree = "<group>"; };
+		11B6407624466820006A1F04 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		11B6407724466820006A1F04 /* IRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRequest.swift; sourceTree = "<group>"; };
+		11B6407824466820006A1F04 /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		11B6407924466820006A1F04 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		11B6407A24466820006A1F04 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,12 @@
 		11B640632446676C006A1F04 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				11B6407624466820006A1F04 /* EndPoint.swift */,
+				11B6407524466820006A1F04 /* HandleError.swift */,
+				11B6407924466820006A1F04 /* HTTPMethod.swift */,
+				11B6407824466820006A1F04 /* HTTPRequest.swift */,
+				11B6407724466820006A1F04 /* IRequest.swift */,
+				11B6407A24466820006A1F04 /* Reachability.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -186,8 +204,14 @@
 			files = (
 				11B6406F244667AE006A1F04 /* Extension+Codable.swift in Sources */,
 				11B6406D244667AE006A1F04 /* Extension+UIViewController.swift in Sources */,
+				11B6407F24466820006A1F04 /* HTTPMethod.swift in Sources */,
 				11B64070244667AE006A1F04 /* Extension+UIView.swift in Sources */,
+				11B6407E24466820006A1F04 /* HTTPRequest.swift in Sources */,
+				11B6407D24466820006A1F04 /* IRequest.swift in Sources */,
 				11348ABB24466547002F47F2 /* AppDelegate.swift in Sources */,
+				11B6407C24466820006A1F04 /* EndPoint.swift in Sources */,
+				11B6408024466820006A1F04 /* Reachability.swift in Sources */,
+				11B6407B24466820006A1F04 /* HandleError.swift in Sources */,
 				11B64074244667AE006A1F04 /* Extension+UIImageView.swift in Sources */,
 				11B6406E244667AE006A1F04 /* Extension+String.swift in Sources */,
 				11B64072244667AE006A1F04 /* Extension+UIApplication.swift in Sources */,
