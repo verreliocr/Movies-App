@@ -9,7 +9,7 @@
 import Foundation
 
 struct MovieListModel: Codable {
-    var pages: Int?
+    var page: Int?
     var totalResults: Int?
     var totalPages: Int?
     var results: [MovieListModelResult] = []
@@ -17,7 +17,7 @@ struct MovieListModel: Codable {
 
 private extension MovieListModel {
     enum CodingKeys: String, CodingKey {
-        case pages = "page"
+        case page = "page"
         case totalResults = "total_results"
         case totalPages = "total_pages"
         case results = "results"
