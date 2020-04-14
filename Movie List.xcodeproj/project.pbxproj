@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		11348ABB24466547002F47F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11348ABA24466547002F47F2 /* AppDelegate.swift */; };
-		11348ABD24466547002F47F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11348ABC24466547002F47F2 /* SceneDelegate.swift */; };
-		11348ABF24466547002F47F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11348ABE24466547002F47F2 /* ViewController.swift */; };
-		11348AC224466547002F47F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11348AC024466547002F47F2 /* Main.storyboard */; };
 		11348AC42446654C002F47F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11348AC32446654C002F47F2 /* Assets.xcassets */; };
 		11348AC72446654C002F47F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11348AC52446654C002F47F2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +15,6 @@
 /* Begin PBXFileReference section */
 		11348AB724466547002F47F2 /* Movie List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11348ABA24466547002F47F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11348ABC24466547002F47F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		11348ABE24466547002F47F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		11348AC124466547002F47F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11348AC32446654C002F47F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11348AC62446654C002F47F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11348AC82446654C002F47F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				11348ABA24466547002F47F2 /* AppDelegate.swift */,
-				11348ABC24466547002F47F2 /* SceneDelegate.swift */,
-				11348ABE24466547002F47F2 /* ViewController.swift */,
-				11348AC024466547002F47F2 /* Main.storyboard */,
 				11348AC32446654C002F47F2 /* Assets.xcassets */,
 				11348AC52446654C002F47F2 /* LaunchScreen.storyboard */,
 				11348AC82446654C002F47F2 /* Info.plist */,
@@ -127,7 +118,6 @@
 			files = (
 				11348AC72446654C002F47F2 /* LaunchScreen.storyboard in Resources */,
 				11348AC42446654C002F47F2 /* Assets.xcassets in Resources */,
-				11348AC224466547002F47F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +128,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11348ABF24466547002F47F2 /* ViewController.swift in Sources */,
 				11348ABB24466547002F47F2 /* AppDelegate.swift in Sources */,
-				11348ABD24466547002F47F2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		11348AC024466547002F47F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11348AC124466547002F47F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		11348AC52446654C002F47F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,11 +267,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6MERJ8ZW37;
 				INFOPLIST_FILE = "Movie List/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "personal.Movie-List";
+				PRODUCT_BUNDLE_IDENTIFIER = personal.movie.list;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,11 +286,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6MERJ8ZW37;
 				INFOPLIST_FILE = "Movie List/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "personal.Movie-List";
+				PRODUCT_BUNDLE_IDENTIFIER = personal.movie.list;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
