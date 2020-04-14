@@ -24,6 +24,10 @@
 		11B6407E24466820006A1F04 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6407824466820006A1F04 /* HTTPRequest.swift */; };
 		11B6407F24466820006A1F04 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6407924466820006A1F04 /* HTTPMethod.swift */; };
 		11B6408024466820006A1F04 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6407A24466820006A1F04 /* Reachability.swift */; };
+		11B64085244677BB006A1F04 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64081244677BB006A1F04 /* AppRouter.swift */; };
+		11B64086244677BB006A1F04 /* IRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64082244677BB006A1F04 /* IRouter.swift */; };
+		11B64087244677BB006A1F04 /* FeatureModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64083244677BB006A1F04 /* FeatureModule.swift */; };
+		11B64088244677BB006A1F04 /* IModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B64084244677BB006A1F04 /* IModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		11B6407824466820006A1F04 /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		11B6407924466820006A1F04 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		11B6407A24466820006A1F04 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		11B64081244677BB006A1F04 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		11B64082244677BB006A1F04 /* IRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRouter.swift; sourceTree = "<group>"; };
+		11B64083244677BB006A1F04 /* FeatureModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureModule.swift; sourceTree = "<group>"; };
+		11B64084244677BB006A1F04 /* IModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,10 @@
 		11B6406424466774006A1F04 /* Routers */ = {
 			isa = PBXGroup;
 			children = (
+				11B64081244677BB006A1F04 /* AppRouter.swift */,
+				11B64083244677BB006A1F04 /* FeatureModule.swift */,
+				11B64084244677BB006A1F04 /* IModule.swift */,
+				11B64082244677BB006A1F04 /* IRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -206,14 +218,18 @@
 				11B6406D244667AE006A1F04 /* Extension+UIViewController.swift in Sources */,
 				11B6407F24466820006A1F04 /* HTTPMethod.swift in Sources */,
 				11B64070244667AE006A1F04 /* Extension+UIView.swift in Sources */,
+				11B64088244677BB006A1F04 /* IModule.swift in Sources */,
 				11B6407E24466820006A1F04 /* HTTPRequest.swift in Sources */,
 				11B6407D24466820006A1F04 /* IRequest.swift in Sources */,
 				11348ABB24466547002F47F2 /* AppDelegate.swift in Sources */,
 				11B6407C24466820006A1F04 /* EndPoint.swift in Sources */,
+				11B64087244677BB006A1F04 /* FeatureModule.swift in Sources */,
 				11B6408024466820006A1F04 /* Reachability.swift in Sources */,
 				11B6407B24466820006A1F04 /* HandleError.swift in Sources */,
+				11B64086244677BB006A1F04 /* IRouter.swift in Sources */,
 				11B64074244667AE006A1F04 /* Extension+UIImageView.swift in Sources */,
 				11B6406E244667AE006A1F04 /* Extension+String.swift in Sources */,
+				11B64085244677BB006A1F04 /* AppRouter.swift in Sources */,
 				11B64072244667AE006A1F04 /* Extension+UIApplication.swift in Sources */,
 				11B64071244667AE006A1F04 /* Extension+UITableViewCell.swift in Sources */,
 				11B64073244667AE006A1F04 /* Extension+UITableView.swift in Sources */,
