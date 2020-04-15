@@ -45,7 +45,7 @@ class ListGenresPresenter: IListGenresPresenter {
         }
     }
     
-    func getNumberOfRows() -> Int {
+    func getNumberOfItems() -> Int {
         return viewModel.listGenres.count
     }
     

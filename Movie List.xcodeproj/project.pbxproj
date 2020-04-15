@@ -44,6 +44,8 @@
 		11B640AA2446FBAD006A1F04 /* ListGenresPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640A92446FBAD006A1F04 /* ListGenresPresenter.swift */; };
 		11B640AC2446FC63006A1F04 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640AB2446FC63006A1F04 /* Extension+UIColor.swift */; };
 		11B640AE2446FC86006A1F04 /* Extension+CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640AD2446FC86006A1F04 /* Extension+CGFloat.swift */; };
+		11B640B42446FE07006A1F04 /* Extension+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640B32446FE07006A1F04 /* Extension+UICollectionView.swift */; };
+		11B640B62446FE0C006A1F04 /* Extension+UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640B52446FE0C006A1F04 /* Extension+UICollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,8 @@
 		11B640A92446FBAD006A1F04 /* ListGenresPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGenresPresenter.swift; sourceTree = "<group>"; };
 		11B640AB2446FC63006A1F04 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 		11B640AD2446FC86006A1F04 /* Extension+CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGFloat.swift"; sourceTree = "<group>"; };
+		11B640B32446FE07006A1F04 /* Extension+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UICollectionView.swift"; sourceTree = "<group>"; };
+		11B640B52446FE0C006A1F04 /* Extension+UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UICollectionViewCell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 				11B64066244667AE006A1F04 /* Extension+String.swift */,
 				11B6406A244667AE006A1F04 /* Extension+UIApplication.swift */,
 				11B640AB2446FC63006A1F04 /* Extension+UIColor.swift */,
+				11B640B32446FE07006A1F04 /* Extension+UICollectionView.swift */,
+				11B640B52446FE0C006A1F04 /* Extension+UICollectionViewCell.swift */,
 				11B6406C244667AE006A1F04 /* Extension+UIImageView.swift */,
 				11B6406B244667AE006A1F04 /* Extension+UITableView.swift */,
 				11B64069244667AE006A1F04 /* Extension+UITableViewCell.swift */,
@@ -312,6 +318,7 @@
 				11B6407D24466820006A1F04 /* IRequest.swift in Sources */,
 				11348ABB24466547002F47F2 /* AppDelegate.swift in Sources */,
 				11B6407C24466820006A1F04 /* EndPoint.swift in Sources */,
+				11B640B62446FE0C006A1F04 /* Extension+UICollectionViewCell.swift in Sources */,
 				11B64087244677BB006A1F04 /* FeatureModule.swift in Sources */,
 				11B6408024466820006A1F04 /* Reachability.swift in Sources */,
 				11B6408E244678AA006A1F04 /* MovieListModels.swift in Sources */,
@@ -322,6 +329,7 @@
 				11B6408C2446781E006A1F04 /* GenreModels.swift in Sources */,
 				11B640AC2446FC63006A1F04 /* Extension+UIColor.swift in Sources */,
 				11B64074244667AE006A1F04 /* Extension+UIImageView.swift in Sources */,
+				11B640B42446FE07006A1F04 /* Extension+UICollectionView.swift in Sources */,
 				11B6406E244667AE006A1F04 /* Extension+String.swift in Sources */,
 				11B6409424467D6A006A1F04 /* ReviewsModels.swift in Sources */,
 				11B6409024467AE4006A1F04 /* VideosModels.swift in Sources */,

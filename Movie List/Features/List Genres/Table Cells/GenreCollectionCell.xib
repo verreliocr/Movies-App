@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="186" height="82"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXn-zq-6tm">
-                                <rect key="frame" x="0.0" y="0.0" width="186" height="82"/>
+                                <rect key="frame" x="8" y="8" width="170" height="66"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -28,10 +28,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="rXn-zq-6tm" secondAttribute="bottom" id="OJO-9j-cfk"/>
-                            <constraint firstItem="rXn-zq-6tm" firstAttribute="top" secondItem="LM4-PB-Yq2" secondAttribute="top" id="flt-Ee-Njg"/>
-                            <constraint firstAttribute="trailing" secondItem="rXn-zq-6tm" secondAttribute="trailing" id="hWd-Jg-NIc"/>
-                            <constraint firstItem="rXn-zq-6tm" firstAttribute="leading" secondItem="LM4-PB-Yq2" secondAttribute="leading" id="uoq-sl-O8s"/>
+                            <constraint firstAttribute="bottom" secondItem="rXn-zq-6tm" secondAttribute="bottom" constant="8" id="OJO-9j-cfk"/>
+                            <constraint firstItem="rXn-zq-6tm" firstAttribute="top" secondItem="LM4-PB-Yq2" secondAttribute="top" constant="8" id="flt-Ee-Njg"/>
+                            <constraint firstAttribute="trailing" secondItem="rXn-zq-6tm" secondAttribute="trailing" constant="8" id="hWd-Jg-NIc"/>
+                            <constraint firstItem="rXn-zq-6tm" firstAttribute="leading" secondItem="LM4-PB-Yq2" secondAttribute="leading" constant="8" id="uoq-sl-O8s"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
