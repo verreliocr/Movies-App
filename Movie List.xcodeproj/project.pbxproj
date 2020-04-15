@@ -65,6 +65,15 @@
 		11B640DF244730D6006A1F04 /* DetailMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B640DD244730D6006A1F04 /* DetailMovieViewController.xib */; };
 		11B640E1244730E6006A1F04 /* DetailMovieModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640E0244730E6006A1F04 /* DetailMovieModule.swift */; };
 		11B640E32447313A006A1F04 /* DetailMovieModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640E22447313A006A1F04 /* DetailMovieModels.swift */; };
+		11B640E824474E6C006A1F04 /* ReviewItemTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640E624474E6C006A1F04 /* ReviewItemTableCell.swift */; };
+		11B640E924474E6C006A1F04 /* ReviewItemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B640E724474E6C006A1F04 /* ReviewItemTableCell.xib */; };
+		11B640EB24474F33006A1F04 /* ReviewsMovieInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640EA24474F33006A1F04 /* ReviewsMovieInterfaces.swift */; };
+		11B640ED24474F3D006A1F04 /* ReviewsMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640EC24474F3D006A1F04 /* ReviewsMovieViewModel.swift */; };
+		11B640EF24474F46006A1F04 /* ReviewsMovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640EE24474F46006A1F04 /* ReviewsMovieInteractor.swift */; };
+		11B640F124474F58006A1F04 /* ReviewsMoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640F024474F58006A1F04 /* ReviewsMoviePresenter.swift */; };
+		11B640F424474F6C006A1F04 /* ReviewsMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640F224474F6C006A1F04 /* ReviewsMovieViewController.swift */; };
+		11B640F524474F6C006A1F04 /* ReviewsMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B640F324474F6C006A1F04 /* ReviewsMovieViewController.xib */; };
+		11B640F724474F73006A1F04 /* ReviewsMovieModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640F624474F73006A1F04 /* ReviewsMovieModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +137,15 @@
 		11B640DD244730D6006A1F04 /* DetailMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailMovieViewController.xib; sourceTree = "<group>"; };
 		11B640E0244730E6006A1F04 /* DetailMovieModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieModule.swift; sourceTree = "<group>"; };
 		11B640E22447313A006A1F04 /* DetailMovieModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieModels.swift; sourceTree = "<group>"; };
+		11B640E624474E6C006A1F04 /* ReviewItemTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewItemTableCell.swift; sourceTree = "<group>"; };
+		11B640E724474E6C006A1F04 /* ReviewItemTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewItemTableCell.xib; sourceTree = "<group>"; };
+		11B640EA24474F33006A1F04 /* ReviewsMovieInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsMovieInterfaces.swift; sourceTree = "<group>"; };
+		11B640EC24474F3D006A1F04 /* ReviewsMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsMovieViewModel.swift; sourceTree = "<group>"; };
+		11B640EE24474F46006A1F04 /* ReviewsMovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsMovieInteractor.swift; sourceTree = "<group>"; };
+		11B640F024474F58006A1F04 /* ReviewsMoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsMoviePresenter.swift; sourceTree = "<group>"; };
+		11B640F224474F6C006A1F04 /* ReviewsMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsMovieViewController.swift; sourceTree = "<group>"; };
+		11B640F324474F6C006A1F04 /* ReviewsMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsMovieViewController.xib; sourceTree = "<group>"; };
+		11B640F624474F73006A1F04 /* ReviewsMovieModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsMovieModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +248,7 @@
 				11B640952446EACC006A1F04 /* List Genres */,
 				11B640B7244703CE006A1F04 /* List Movie */,
 				11B640D12447302A006A1F04 /* Detail Movie */,
+				11B640E424474BED006A1F04 /* Reviews Movie */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -311,6 +330,30 @@
 			path = "Detail Movie";
 			sourceTree = "<group>";
 		};
+		11B640E424474BED006A1F04 /* Reviews Movie */ = {
+			isa = PBXGroup;
+			children = (
+				11B640E524474E0A006A1F04 /* Table Cells */,
+				11B640EA24474F33006A1F04 /* ReviewsMovieInterfaces.swift */,
+				11B640EC24474F3D006A1F04 /* ReviewsMovieViewModel.swift */,
+				11B640EE24474F46006A1F04 /* ReviewsMovieInteractor.swift */,
+				11B640F024474F58006A1F04 /* ReviewsMoviePresenter.swift */,
+				11B640F224474F6C006A1F04 /* ReviewsMovieViewController.swift */,
+				11B640F324474F6C006A1F04 /* ReviewsMovieViewController.xib */,
+				11B640F624474F73006A1F04 /* ReviewsMovieModule.swift */,
+			);
+			path = "Reviews Movie";
+			sourceTree = "<group>";
+		};
+		11B640E524474E0A006A1F04 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				11B640E624474E6C006A1F04 /* ReviewItemTableCell.swift */,
+				11B640E724474E6C006A1F04 /* ReviewItemTableCell.xib */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,7 +412,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B640F524474F6C006A1F04 /* ReviewsMovieViewController.xib in Resources */,
 				11B640C02447083D006A1F04 /* MovieItemTableCell.xib in Resources */,
+				11B640E924474E6C006A1F04 /* ReviewItemTableCell.xib in Resources */,
 				11B640DF244730D6006A1F04 /* DetailMovieViewController.xib in Resources */,
 				11348AC72446654C002F47F2 /* LaunchScreen.storyboard in Resources */,
 				11B640A82446F8EA006A1F04 /* GenreCollectionCell.xib in Resources */,
@@ -398,6 +443,7 @@
 				11B640AE2446FC86006A1F04 /* Extension+CGFloat.swift in Sources */,
 				11B6407F24466820006A1F04 /* HTTPMethod.swift in Sources */,
 				11B640992446EB24006A1F04 /* ListGenresViewModel.swift in Sources */,
+				11B640EF24474F46006A1F04 /* ReviewsMovieInteractor.swift in Sources */,
 				11B64070244667AE006A1F04 /* Extension+UIView.swift in Sources */,
 				11B64088244677BB006A1F04 /* IModule.swift in Sources */,
 				11B6407E24466820006A1F04 /* HTTPRequest.swift in Sources */,
@@ -405,24 +451,30 @@
 				11B640A72446F8EA006A1F04 /* GenreCollectionCell.swift in Sources */,
 				11B6407D24466820006A1F04 /* IRequest.swift in Sources */,
 				11348ABB24466547002F47F2 /* AppDelegate.swift in Sources */,
+				11B640ED24474F3D006A1F04 /* ReviewsMovieViewModel.swift in Sources */,
 				11B6407C24466820006A1F04 /* EndPoint.swift in Sources */,
 				11B640B62446FE0C006A1F04 /* Extension+UICollectionViewCell.swift in Sources */,
 				11B64087244677BB006A1F04 /* FeatureModule.swift in Sources */,
 				11B6408024466820006A1F04 /* Reachability.swift in Sources */,
 				11B6408E244678AA006A1F04 /* ListMovieModels.swift in Sources */,
 				11B6409D2446EB45006A1F04 /* ListGenresInteractor.swift in Sources */,
+				11B640F124474F58006A1F04 /* ReviewsMoviePresenter.swift in Sources */,
 				11B6407B24466820006A1F04 /* HandleError.swift in Sources */,
 				11B640AA2446FBAD006A1F04 /* ListGenresPresenter.swift in Sources */,
 				11B640E32447313A006A1F04 /* DetailMovieModels.swift in Sources */,
 				11B64086244677BB006A1F04 /* IRouter.swift in Sources */,
 				11B640C424470CA7006A1F04 /* ListMovieViewModel.swift in Sources */,
 				11B640E1244730E6006A1F04 /* DetailMovieModule.swift in Sources */,
+				11B640F724474F73006A1F04 /* ReviewsMovieModule.swift in Sources */,
+				11B640EB24474F33006A1F04 /* ReviewsMovieInterfaces.swift in Sources */,
 				11B6408C2446781E006A1F04 /* GenreModels.swift in Sources */,
 				11B640CA24470D1F006A1F04 /* ListMoviePresenter.swift in Sources */,
 				11B640D32447308C006A1F04 /* DetailMovieInterfaces.swift in Sources */,
 				11B640AC2446FC63006A1F04 /* Extension+UIColor.swift in Sources */,
 				11B640D524473097006A1F04 /* DetailMovieViewModel.swift in Sources */,
 				11B640D7244730B4006A1F04 /* DetailMovieInteractor.swift in Sources */,
+				11B640E824474E6C006A1F04 /* ReviewItemTableCell.swift in Sources */,
+				11B640F424474F6C006A1F04 /* ReviewsMovieViewController.swift in Sources */,
 				11B64074244667AE006A1F04 /* Extension+UIImageView.swift in Sources */,
 				11B640D024470D3F006A1F04 /* ListMovieModule.swift in Sources */,
 				11B640DE244730D6006A1F04 /* DetailMovieViewController.swift in Sources */,
