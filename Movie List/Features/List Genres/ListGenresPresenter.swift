@@ -12,13 +12,13 @@ import UIKit
 class ListGenresPresenter: IListGenresPresenter {
     weak var view: IListGenresView?
     let viewModel: ListGenresViewModel
-    let wireframe: IListGenresWireframe
     let interactor: IListGenresInteractor
+    let wireframe: IListGenresWireframe
     
-    init(viewModel: ListGenresViewModel, wireframe: IListGenresWireframe, interactor: IListGenresInteractor) {
+    init(viewModel: ListGenresViewModel, interactor: IListGenresInteractor, wireframe: IListGenresWireframe) {
         self.viewModel = viewModel
-        self.wireframe = wireframe
         self.interactor = interactor
+        self.wireframe = wireframe
     }
     
     func setView(_ view: IListGenresView) {

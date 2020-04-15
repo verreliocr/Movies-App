@@ -18,9 +18,9 @@ class ListGenresModule: IModule {
     
     func resolve(using params: [String : Any]) -> UIViewController {
         let viewModel = ListGenresViewModel()
-        let wireframe = ListGenresWireframe(appRouter: router)
         let interactor = ListGenresInteractor(request: HTTPRequest())
-        let presenter = ListGenresPresenter(viewModel: viewModel, wireframe: wireframe, interactor: interactor)
+        let wireframe = ListGenresWireframe(appRouter: router)
+        let presenter = ListGenresPresenter(viewModel: viewModel, interactor: interactor, wireframe: wireframe)
         let view = ListGenresViewController(presenter: presenter)
         presenter.setView(view)
         return view

@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct MovieListModel: Codable {
+struct ListMovieModel: Codable {
     var page: Int?
     var totalResults: Int?
     var totalPages: Int?
-    var results: [MovieListModelResult] = []
+    var results: [ListMovieModelResult] = []
 }
 
-private extension MovieListModel {
+private extension ListMovieModel {
     enum CodingKeys: String, CodingKey {
         case page = "page"
         case totalResults = "total_results"
@@ -24,7 +24,7 @@ private extension MovieListModel {
     }
 }
 
-struct MovieListModelResult: Codable {
+struct ListMovieModelResult: Codable {
     var id: Int?
     var posterPath: String?
     var title: String?
@@ -33,7 +33,7 @@ struct MovieListModelResult: Codable {
     var releaseDate: String?
 }
 
-private extension MovieListModelResult {
+private extension ListMovieModelResult {
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case posterPath = "poster_path"
