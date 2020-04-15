@@ -35,7 +35,7 @@ class ListGenresViewController: UIViewController {
     }
     
     private func setupNavBar() {
-        self.title = "Contact"
+        self.title = "Movie"
     }
     
     private func setupCollectionView() {
