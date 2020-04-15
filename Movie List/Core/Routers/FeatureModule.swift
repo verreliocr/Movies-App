@@ -12,6 +12,7 @@ import UIKit
 enum FeatureModule {
     case listGenres
     case listMovies
+    case detailMovie
 
     func create(using router: IRouter) -> IModule {
         switch self {
@@ -19,6 +20,8 @@ enum FeatureModule {
             return ListGenresModule(appRouter: router)
         case .listMovies:
             return ListMovieModule(appRouter: router)
+        case .detailMovie:
+            return DetailMovieModule(appRouter: router)
         }
     }
 }

@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+class DetailMovieInteractor: IDetailMovieInteractor {
+    let request: IRequest
+    
+    init(request: IRequest) {
+        self.request = request
+    }
+    
+    func getDetailMovie(movieId: Int, completion: @escaping ((DetailMovieModel?, ErrorType?) -> Void)) {
+        request.call(.getDetailMovie(id: movieId), bodyParams: [:]) { data, type in
+            if let detailModel = DetailMovieModel.decode(from: data) {
+                completion(detailModel, nil)
+            }else{
+                completion(nil, type)
+            }
+        }
+    }
+}

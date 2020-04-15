@@ -64,6 +64,7 @@
 		11B640DE244730D6006A1F04 /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640DC244730D6006A1F04 /* DetailMovieViewController.swift */; };
 		11B640DF244730D6006A1F04 /* DetailMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B640DD244730D6006A1F04 /* DetailMovieViewController.xib */; };
 		11B640E1244730E6006A1F04 /* DetailMovieModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640E0244730E6006A1F04 /* DetailMovieModule.swift */; };
+		11B640E32447313A006A1F04 /* DetailMovieModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640E22447313A006A1F04 /* DetailMovieModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,7 @@
 		11B640DC244730D6006A1F04 /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
 		11B640DD244730D6006A1F04 /* DetailMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailMovieViewController.xib; sourceTree = "<group>"; };
 		11B640E0244730E6006A1F04 /* DetailMovieModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieModule.swift; sourceTree = "<group>"; };
+		11B640E22447313A006A1F04 /* DetailMovieModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 			children = (
 				11B6408B2446781E006A1F04 /* GenreModels.swift */,
 				11B6408D244678AA006A1F04 /* ListMovieModels.swift */,
+				11B640E22447313A006A1F04 /* DetailMovieModels.swift */,
 				11B6408F24467AE4006A1F04 /* VideosModels.swift */,
 				11B6409324467D6A006A1F04 /* ReviewsModels.swift */,
 			);
@@ -410,6 +413,7 @@
 				11B6409D2446EB45006A1F04 /* ListGenresInteractor.swift in Sources */,
 				11B6407B24466820006A1F04 /* HandleError.swift in Sources */,
 				11B640AA2446FBAD006A1F04 /* ListGenresPresenter.swift in Sources */,
+				11B640E32447313A006A1F04 /* DetailMovieModels.swift in Sources */,
 				11B64086244677BB006A1F04 /* IRouter.swift in Sources */,
 				11B640C424470CA7006A1F04 /* ListMovieViewModel.swift in Sources */,
 				11B640E1244730E6006A1F04 /* DetailMovieModule.swift in Sources */,

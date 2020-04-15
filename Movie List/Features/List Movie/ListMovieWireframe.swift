@@ -16,6 +16,7 @@ class ListMovieWireframe: IListMovieWireframe {
     }
     
     func navigateToDetailMovie(with id: Int) {
-        
+        appRouter.push(module: .detailMovie,
+                       using: ["id": id])
     }
 }

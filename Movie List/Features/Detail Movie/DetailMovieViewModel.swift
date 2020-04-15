@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class DetailMovieViewModel {
+    var movieId: Int
+    var detailMovie: DetailMovieModel = DetailMovieModel()
+    
+    init(movieId: Int) {
+        self.movieId = movieId
+    }
+}

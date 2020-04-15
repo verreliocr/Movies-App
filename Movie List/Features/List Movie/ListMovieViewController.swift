@@ -97,4 +97,8 @@ extension ListMovieViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         presenter.willDisplayCell(at: indexPath.row)
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didSelectMovie(at: indexPath.row)
+    }
 }

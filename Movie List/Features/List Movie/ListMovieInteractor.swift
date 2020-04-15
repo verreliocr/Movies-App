@@ -17,8 +17,8 @@ class ListMovieInteractor: IListMovieInteractor {
     
     func getListMovie(page: Int, genreId: Int, completion: @escaping ((ListMovieModel?, ErrorType?) -> Void)) {
         request.call(.getDiscoverMovie(page: page, genreId: genreId), bodyParams: [:]) { data, type in
-            if let genreModel = ListMovieModel.decode(from: data) {
-                completion(genreModel, nil)
+            if let listModel = ListMovieModel.decode(from: data) {
+                completion(listModel, nil)
             }else{
                 completion(nil, type)
             }
