@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class ListGenresWireframe: IListGenresWireframe {
+    let appRouter: IRouter
+    
+    init(appRouter: IRouter) {
+        self.appRouter = appRouter
+    }
+    
+    func navigateToListMovie(with id: Int) {
+        
+    }
+}
