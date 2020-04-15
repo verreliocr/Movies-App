@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+class ListGenresViewModel {
+    var listGenres: [GenreModelItem] = []
+}

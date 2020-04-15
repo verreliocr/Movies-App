@@ -9,7 +9,7 @@
 import Foundation
 
 struct GenreModel: Codable {
-    var genres: [GenreModelItems] = []
+    var genres: [GenreModelItem] = []
 }
 
 private extension GenreModel {
@@ -18,12 +18,12 @@ private extension GenreModel {
     }
 }
 
-struct GenreModelItems: Codable {
-    var id: String?
+struct GenreModelItem: Codable {
+    var id: Int?
     var name: String?
 }
 
-private extension GenreModelItems {
+private extension GenreModelItem {
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case name = "name"

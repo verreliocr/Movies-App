@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+class ListGenresInteractor: IListGenresInteractor {
+    let request: IRequest
+    
+    init(request: IRequest) {
+        self.request = request
+    }
+    
+    func getListGenres(completion: @escaping (([GenreModelItem]?, ErrorType?) -> Void)) {
+        request.call(.getListGenre, bodyParams: [:]) { data, type in
+            if let genreModel = GenreModel.decode(from: data) {
+                completion(genreModel.genres, nil)
+            }else{
+                completion(nil, type)
+            }
+        }
+    }
+}
+
