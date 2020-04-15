@@ -32,6 +32,13 @@
 		11B6408E244678AA006A1F04 /* MovieListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6408D244678AA006A1F04 /* MovieListModels.swift */; };
 		11B6409024467AE4006A1F04 /* VideosModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6408F24467AE4006A1F04 /* VideosModels.swift */; };
 		11B6409424467D6A006A1F04 /* ReviewsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6409324467D6A006A1F04 /* ReviewsModels.swift */; };
+		11B640972446EAF9006A1F04 /* ListGenresInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640962446EAF9006A1F04 /* ListGenresInterfaces.swift */; };
+		11B640992446EB24006A1F04 /* ListGenresViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640982446EB24006A1F04 /* ListGenresViewModel.swift */; };
+		11B6409B2446EB31006A1F04 /* ListGenresWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6409A2446EB31006A1F04 /* ListGenresWireframe.swift */; };
+		11B6409D2446EB45006A1F04 /* ListGenresInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6409C2446EB45006A1F04 /* ListGenresInteractor.swift */; };
+		11B640A02446F7DB006A1F04 /* ListGenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6409E2446F7DB006A1F04 /* ListGenresViewController.swift */; };
+		11B640A12446F7DB006A1F04 /* ListGenresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B6409F2446F7DB006A1F04 /* ListGenresViewController.xib */; };
+		11B640A32446F7E5006A1F04 /* ListGenresModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640A22446F7E5006A1F04 /* ListGenresModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +69,13 @@
 		11B6408D244678AA006A1F04 /* MovieListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModels.swift; sourceTree = "<group>"; };
 		11B6408F24467AE4006A1F04 /* VideosModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosModels.swift; sourceTree = "<group>"; };
 		11B6409324467D6A006A1F04 /* ReviewsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsModels.swift; sourceTree = "<group>"; };
+		11B640962446EAF9006A1F04 /* ListGenresInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGenresInterfaces.swift; sourceTree = "<group>"; };
+		11B640982446EB24006A1F04 /* ListGenresViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGenresViewModel.swift; sourceTree = "<group>"; };
+		11B6409A2446EB31006A1F04 /* ListGenresWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGenresWireframe.swift; sourceTree = "<group>"; };
+		11B6409C2446EB45006A1F04 /* ListGenresInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGenresInteractor.swift; sourceTree = "<group>"; };
+		11B6409E2446F7DB006A1F04 /* ListGenresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGenresViewController.swift; sourceTree = "<group>"; };
+		11B6409F2446F7DB006A1F04 /* ListGenresViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListGenresViewController.xib; sourceTree = "<group>"; };
+		11B640A22446F7E5006A1F04 /* ListGenresModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGenresModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +171,7 @@
 		11B64089244677E4006A1F04 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				11B640952446EACC006A1F04 /* List Genres */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -170,6 +185,20 @@
 				11B6409324467D6A006A1F04 /* ReviewsModels.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		11B640952446EACC006A1F04 /* List Genres */ = {
+			isa = PBXGroup;
+			children = (
+				11B640962446EAF9006A1F04 /* ListGenresInterfaces.swift */,
+				11B640982446EB24006A1F04 /* ListGenresViewModel.swift */,
+				11B6409A2446EB31006A1F04 /* ListGenresWireframe.swift */,
+				11B6409C2446EB45006A1F04 /* ListGenresInteractor.swift */,
+				11B6409E2446F7DB006A1F04 /* ListGenresViewController.swift */,
+				11B6409F2446F7DB006A1F04 /* ListGenresViewController.xib */,
+				11B640A22446F7E5006A1F04 /* ListGenresModule.swift */,
+			);
+			path = "List Genres";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +261,7 @@
 			files = (
 				11348AC72446654C002F47F2 /* LaunchScreen.storyboard in Resources */,
 				11348AC42446654C002F47F2 /* Assets.xcassets in Resources */,
+				11B640A12446F7DB006A1F04 /* ListGenresViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,9 +272,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B640A32446F7E5006A1F04 /* ListGenresModule.swift in Sources */,
+				11B6409B2446EB31006A1F04 /* ListGenresWireframe.swift in Sources */,
 				11B6406F244667AE006A1F04 /* Extension+Codable.swift in Sources */,
+				11B640972446EAF9006A1F04 /* ListGenresInterfaces.swift in Sources */,
 				11B6406D244667AE006A1F04 /* Extension+UIViewController.swift in Sources */,
+				11B640A02446F7DB006A1F04 /* ListGenresViewController.swift in Sources */,
 				11B6407F24466820006A1F04 /* HTTPMethod.swift in Sources */,
+				11B640992446EB24006A1F04 /* ListGenresViewModel.swift in Sources */,
 				11B64070244667AE006A1F04 /* Extension+UIView.swift in Sources */,
 				11B64088244677BB006A1F04 /* IModule.swift in Sources */,
 				11B6407E24466820006A1F04 /* HTTPRequest.swift in Sources */,
@@ -254,6 +289,7 @@
 				11B64087244677BB006A1F04 /* FeatureModule.swift in Sources */,
 				11B6408024466820006A1F04 /* Reachability.swift in Sources */,
 				11B6408E244678AA006A1F04 /* MovieListModels.swift in Sources */,
+				11B6409D2446EB45006A1F04 /* ListGenresInteractor.swift in Sources */,
 				11B6407B24466820006A1F04 /* HandleError.swift in Sources */,
 				11B64086244677BB006A1F04 /* IRouter.swift in Sources */,
 				11B6408C2446781E006A1F04 /* GenreModels.swift in Sources */,
