@@ -39,6 +39,11 @@
 		11B640A02446F7DB006A1F04 /* ListGenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6409E2446F7DB006A1F04 /* ListGenresViewController.swift */; };
 		11B640A12446F7DB006A1F04 /* ListGenresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B6409F2446F7DB006A1F04 /* ListGenresViewController.xib */; };
 		11B640A32446F7E5006A1F04 /* ListGenresModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640A22446F7E5006A1F04 /* ListGenresModule.swift */; };
+		11B640A72446F8EA006A1F04 /* GenreCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640A52446F8EA006A1F04 /* GenreCollectionCell.swift */; };
+		11B640A82446F8EA006A1F04 /* GenreCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B640A62446F8EA006A1F04 /* GenreCollectionCell.xib */; };
+		11B640AA2446FBAD006A1F04 /* ListGenresPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640A92446FBAD006A1F04 /* ListGenresPresenter.swift */; };
+		11B640AC2446FC63006A1F04 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640AB2446FC63006A1F04 /* Extension+UIColor.swift */; };
+		11B640AE2446FC86006A1F04 /* Extension+CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640AD2446FC86006A1F04 /* Extension+CGFloat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +81,11 @@
 		11B6409E2446F7DB006A1F04 /* ListGenresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGenresViewController.swift; sourceTree = "<group>"; };
 		11B6409F2446F7DB006A1F04 /* ListGenresViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListGenresViewController.xib; sourceTree = "<group>"; };
 		11B640A22446F7E5006A1F04 /* ListGenresModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGenresModule.swift; sourceTree = "<group>"; };
+		11B640A52446F8EA006A1F04 /* GenreCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCollectionCell.swift; sourceTree = "<group>"; };
+		11B640A62446F8EA006A1F04 /* GenreCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenreCollectionCell.xib; sourceTree = "<group>"; };
+		11B640A92446FBAD006A1F04 /* ListGenresPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGenresPresenter.swift; sourceTree = "<group>"; };
+		11B640AB2446FC63006A1F04 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		11B640AD2446FC86006A1F04 /* Extension+CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGFloat.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +142,11 @@
 		11B6406124466757006A1F04 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				11B640AD2446FC86006A1F04 /* Extension+CGFloat.swift */,
 				11B64067244667AE006A1F04 /* Extension+Codable.swift */,
 				11B64066244667AE006A1F04 /* Extension+String.swift */,
 				11B6406A244667AE006A1F04 /* Extension+UIApplication.swift */,
+				11B640AB2446FC63006A1F04 /* Extension+UIColor.swift */,
 				11B6406C244667AE006A1F04 /* Extension+UIImageView.swift */,
 				11B6406B244667AE006A1F04 /* Extension+UITableView.swift */,
 				11B64069244667AE006A1F04 /* Extension+UITableViewCell.swift */,
@@ -190,15 +202,26 @@
 		11B640952446EACC006A1F04 /* List Genres */ = {
 			isa = PBXGroup;
 			children = (
+				11B640A42446F87E006A1F04 /* Table Cells */,
 				11B640962446EAF9006A1F04 /* ListGenresInterfaces.swift */,
 				11B640982446EB24006A1F04 /* ListGenresViewModel.swift */,
 				11B6409A2446EB31006A1F04 /* ListGenresWireframe.swift */,
 				11B6409C2446EB45006A1F04 /* ListGenresInteractor.swift */,
+				11B640A92446FBAD006A1F04 /* ListGenresPresenter.swift */,
 				11B6409E2446F7DB006A1F04 /* ListGenresViewController.swift */,
 				11B6409F2446F7DB006A1F04 /* ListGenresViewController.xib */,
 				11B640A22446F7E5006A1F04 /* ListGenresModule.swift */,
 			);
 			path = "List Genres";
+			sourceTree = "<group>";
+		};
+		11B640A42446F87E006A1F04 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				11B640A52446F8EA006A1F04 /* GenreCollectionCell.swift */,
+				11B640A62446F8EA006A1F04 /* GenreCollectionCell.xib */,
+			);
+			path = "Table Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11348AC72446654C002F47F2 /* LaunchScreen.storyboard in Resources */,
+				11B640A82446F8EA006A1F04 /* GenreCollectionCell.xib in Resources */,
 				11348AC42446654C002F47F2 /* Assets.xcassets in Resources */,
 				11B640A12446F7DB006A1F04 /* ListGenresViewController.xib in Resources */,
 			);
@@ -278,11 +302,13 @@
 				11B640972446EAF9006A1F04 /* ListGenresInterfaces.swift in Sources */,
 				11B6406D244667AE006A1F04 /* Extension+UIViewController.swift in Sources */,
 				11B640A02446F7DB006A1F04 /* ListGenresViewController.swift in Sources */,
+				11B640AE2446FC86006A1F04 /* Extension+CGFloat.swift in Sources */,
 				11B6407F24466820006A1F04 /* HTTPMethod.swift in Sources */,
 				11B640992446EB24006A1F04 /* ListGenresViewModel.swift in Sources */,
 				11B64070244667AE006A1F04 /* Extension+UIView.swift in Sources */,
 				11B64088244677BB006A1F04 /* IModule.swift in Sources */,
 				11B6407E24466820006A1F04 /* HTTPRequest.swift in Sources */,
+				11B640A72446F8EA006A1F04 /* GenreCollectionCell.swift in Sources */,
 				11B6407D24466820006A1F04 /* IRequest.swift in Sources */,
 				11348ABB24466547002F47F2 /* AppDelegate.swift in Sources */,
 				11B6407C24466820006A1F04 /* EndPoint.swift in Sources */,
@@ -291,8 +317,10 @@
 				11B6408E244678AA006A1F04 /* MovieListModels.swift in Sources */,
 				11B6409D2446EB45006A1F04 /* ListGenresInteractor.swift in Sources */,
 				11B6407B24466820006A1F04 /* HandleError.swift in Sources */,
+				11B640AA2446FBAD006A1F04 /* ListGenresPresenter.swift in Sources */,
 				11B64086244677BB006A1F04 /* IRouter.swift in Sources */,
 				11B6408C2446781E006A1F04 /* GenreModels.swift in Sources */,
+				11B640AC2446FC63006A1F04 /* Extension+UIColor.swift in Sources */,
 				11B64074244667AE006A1F04 /* Extension+UIImageView.swift in Sources */,
 				11B6406E244667AE006A1F04 /* Extension+String.swift in Sources */,
 				11B6409424467D6A006A1F04 /* ReviewsModels.swift in Sources */,
