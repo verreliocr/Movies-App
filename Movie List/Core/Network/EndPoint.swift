@@ -14,6 +14,7 @@ private let APIKey = "0634895be8bc7be70fe69ceef8e006cf"
 enum EndPoint {
     case getListGenre
     case getDiscoverMovie(page: Int, genreId: Int)
+    case getDetailMovie(id: Int)
     case getVideo(id: Int)
     case getReviews(id: Int, page: Int)
     
@@ -31,6 +32,8 @@ enum EndPoint {
             path = "/genre/movie/list?api_key=\(APIKey)"
         case .getDiscoverMovie(let page, let genreId):
             path = "/discover/movie?api_key=\(APIKey)&page=\(page)&with_genres=\(genreId)"
+        case .getDetailMovie(let id):
+            path = "/movie/\(id)?api_key=\(APIKey)"
         case .getVideo(let id):
             path = "/movie/\(id)/videos?api_key=\(APIKey)"
         case .getReviews(let id, let page):

@@ -56,6 +56,14 @@
 		11B640CD24470D2F006A1F04 /* ListMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640CB24470D2F006A1F04 /* ListMovieViewController.swift */; };
 		11B640CE24470D2F006A1F04 /* ListMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B640CC24470D2F006A1F04 /* ListMovieViewController.xib */; };
 		11B640D024470D3F006A1F04 /* ListMovieModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640CF24470D3F006A1F04 /* ListMovieModule.swift */; };
+		11B640D32447308C006A1F04 /* DetailMovieInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640D22447308C006A1F04 /* DetailMovieInterfaces.swift */; };
+		11B640D524473097006A1F04 /* DetailMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640D424473097006A1F04 /* DetailMovieViewModel.swift */; };
+		11B640D7244730B4006A1F04 /* DetailMovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640D6244730B4006A1F04 /* DetailMovieInteractor.swift */; };
+		11B640D9244730BE006A1F04 /* DetailMovieWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640D8244730BE006A1F04 /* DetailMovieWireframe.swift */; };
+		11B640DB244730C7006A1F04 /* DetailMoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640DA244730C7006A1F04 /* DetailMoviePresenter.swift */; };
+		11B640DE244730D6006A1F04 /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640DC244730D6006A1F04 /* DetailMovieViewController.swift */; };
+		11B640DF244730D6006A1F04 /* DetailMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B640DD244730D6006A1F04 /* DetailMovieViewController.xib */; };
+		11B640E1244730E6006A1F04 /* DetailMovieModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640E0244730E6006A1F04 /* DetailMovieModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +118,14 @@
 		11B640CB24470D2F006A1F04 /* ListMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieViewController.swift; sourceTree = "<group>"; };
 		11B640CC24470D2F006A1F04 /* ListMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListMovieViewController.xib; sourceTree = "<group>"; };
 		11B640CF24470D3F006A1F04 /* ListMovieModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieModule.swift; sourceTree = "<group>"; };
+		11B640D22447308C006A1F04 /* DetailMovieInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieInterfaces.swift; sourceTree = "<group>"; };
+		11B640D424473097006A1F04 /* DetailMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewModel.swift; sourceTree = "<group>"; };
+		11B640D6244730B4006A1F04 /* DetailMovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieInteractor.swift; sourceTree = "<group>"; };
+		11B640D8244730BE006A1F04 /* DetailMovieWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieWireframe.swift; sourceTree = "<group>"; };
+		11B640DA244730C7006A1F04 /* DetailMoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMoviePresenter.swift; sourceTree = "<group>"; };
+		11B640DC244730D6006A1F04 /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
+		11B640DD244730D6006A1F04 /* DetailMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailMovieViewController.xib; sourceTree = "<group>"; };
+		11B640E0244730E6006A1F04 /* DetailMovieModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +227,7 @@
 			children = (
 				11B640952446EACC006A1F04 /* List Genres */,
 				11B640B7244703CE006A1F04 /* List Movie */,
+				11B640D12447302A006A1F04 /* Detail Movie */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -276,6 +293,21 @@
 			path = "Table Cells";
 			sourceTree = "<group>";
 		};
+		11B640D12447302A006A1F04 /* Detail Movie */ = {
+			isa = PBXGroup;
+			children = (
+				11B640D22447308C006A1F04 /* DetailMovieInterfaces.swift */,
+				11B640D424473097006A1F04 /* DetailMovieViewModel.swift */,
+				11B640D6244730B4006A1F04 /* DetailMovieInteractor.swift */,
+				11B640D8244730BE006A1F04 /* DetailMovieWireframe.swift */,
+				11B640DA244730C7006A1F04 /* DetailMoviePresenter.swift */,
+				11B640DC244730D6006A1F04 /* DetailMovieViewController.swift */,
+				11B640DD244730D6006A1F04 /* DetailMovieViewController.xib */,
+				11B640E0244730E6006A1F04 /* DetailMovieModule.swift */,
+			);
+			path = "Detail Movie";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -335,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11B640C02447083D006A1F04 /* MovieItemTableCell.xib in Resources */,
+				11B640DF244730D6006A1F04 /* DetailMovieViewController.xib in Resources */,
 				11348AC72446654C002F47F2 /* LaunchScreen.storyboard in Resources */,
 				11B640A82446F8EA006A1F04 /* GenreCollectionCell.xib in Resources */,
 				11B640CE24470D2F006A1F04 /* ListMovieViewController.xib in Resources */,
@@ -350,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B640DB244730C7006A1F04 /* DetailMoviePresenter.swift in Sources */,
 				11B640A32446F7E5006A1F04 /* ListGenresModule.swift in Sources */,
 				11B6409B2446EB31006A1F04 /* ListGenresWireframe.swift in Sources */,
 				11B640BF2447083D006A1F04 /* MovieItemTableCell.swift in Sources */,
@@ -364,6 +398,7 @@
 				11B64070244667AE006A1F04 /* Extension+UIView.swift in Sources */,
 				11B64088244677BB006A1F04 /* IModule.swift in Sources */,
 				11B6407E24466820006A1F04 /* HTTPRequest.swift in Sources */,
+				11B640D9244730BE006A1F04 /* DetailMovieWireframe.swift in Sources */,
 				11B640A72446F8EA006A1F04 /* GenreCollectionCell.swift in Sources */,
 				11B6407D24466820006A1F04 /* IRequest.swift in Sources */,
 				11348ABB24466547002F47F2 /* AppDelegate.swift in Sources */,
@@ -377,11 +412,16 @@
 				11B640AA2446FBAD006A1F04 /* ListGenresPresenter.swift in Sources */,
 				11B64086244677BB006A1F04 /* IRouter.swift in Sources */,
 				11B640C424470CA7006A1F04 /* ListMovieViewModel.swift in Sources */,
+				11B640E1244730E6006A1F04 /* DetailMovieModule.swift in Sources */,
 				11B6408C2446781E006A1F04 /* GenreModels.swift in Sources */,
 				11B640CA24470D1F006A1F04 /* ListMoviePresenter.swift in Sources */,
+				11B640D32447308C006A1F04 /* DetailMovieInterfaces.swift in Sources */,
 				11B640AC2446FC63006A1F04 /* Extension+UIColor.swift in Sources */,
+				11B640D524473097006A1F04 /* DetailMovieViewModel.swift in Sources */,
+				11B640D7244730B4006A1F04 /* DetailMovieInteractor.swift in Sources */,
 				11B64074244667AE006A1F04 /* Extension+UIImageView.swift in Sources */,
 				11B640D024470D3F006A1F04 /* ListMovieModule.swift in Sources */,
+				11B640DE244730D6006A1F04 /* DetailMovieViewController.swift in Sources */,
 				11B640B42446FE07006A1F04 /* Extension+UICollectionView.swift in Sources */,
 				11B6406E244667AE006A1F04 /* Extension+String.swift in Sources */,
 				11B640C224470C9A006A1F04 /* ListMovieInterfaces.swift in Sources */,
