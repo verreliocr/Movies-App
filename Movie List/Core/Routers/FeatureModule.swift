@@ -13,6 +13,7 @@ enum FeatureModule {
     case listGenres
     case listMovies
     case detailMovie
+    case listReview
 
     func create(using router: IRouter) -> IModule {
         switch self {
@@ -22,6 +23,8 @@ enum FeatureModule {
             return ListMovieModule(appRouter: router)
         case .detailMovie:
             return DetailMovieModule(appRouter: router)
+        case .listReview:
+            return ReviewsMovieModule(appRouter: router)
         }
     }
 }

@@ -59,7 +59,7 @@ class DetailMoviePresenter: IDetailMoviePresenter {
     }
     
     func getTitlePage() -> String {
-        return ""
+        return "Detail Movie"
     }
     
     func getImageURL() -> URL? {

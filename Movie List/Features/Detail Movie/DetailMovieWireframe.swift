@@ -16,6 +16,7 @@ class DetailMovieWireframe: IDetailMovieWireframe {
     }
     
     func navigateToListReviews(with id: Int) {
-        
+        appRouter.push(module: .listReview,
+                       using: ["id": id])
     }
 }

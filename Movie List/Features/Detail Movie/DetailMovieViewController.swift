@@ -12,6 +12,7 @@ import WebKit
 class DetailMovieViewController: UIViewController {
     
     let presenter: IDetailMoviePresenter
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var posterImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -20,6 +21,8 @@ class DetailMovieViewController: UIViewController {
     @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var overviewLabel: UILabel!
     @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var webViewLoading: UIView!
+    @IBOutlet weak var reviewsButton: UIButton!
     
     init(presenter: IDetailMoviePresenter) {
         self.presenter = presenter
@@ -32,12 +35,34 @@ class DetailMovieViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 88, right: 0)
         self.title = presenter.getTitlePage()
+        
+        reviewsButton.addAction { [unowned self] in
+            self.presenter.didSelectReviews()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter.viewWillAppear()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        webView.removeObserver(self, forKeyPath: "estimatedProgress", context: nil)
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "estimatedProgress" {
+            let value = webView.estimatedProgress
+            let progress = Float(value)
+            if progress == 1 {
+                self.webViewLoading.isHidden = true
+            } else {
+                self.webViewLoading.isHidden = false
+            }
+        }
     }
 
 }
@@ -56,6 +81,7 @@ extension DetailMovieViewController: IDetailMovieView {
         
         if let url = URL(string: "https://www.youtube.com/embed/\(presenter.getYoutubeKey())") {
             webView.load(URLRequest(url: url))
+            webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
             webView.isHidden = false
         }else{
             webView.isHidden = true

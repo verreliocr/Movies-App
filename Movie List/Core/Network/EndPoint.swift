@@ -39,7 +39,7 @@ enum EndPoint {
         case .getReviews(let id, let page):
             path = "/movie/\(id)/reviews?api_key=\(APIKey)&page=\(page)"
         }
-        
+        print(baseURL + path)
         return baseURL + path
     }
 }

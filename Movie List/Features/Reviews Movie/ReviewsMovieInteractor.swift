@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+class ReviewsMovieInteractor: IReviewsMovieInteractor {
+    let request: IRequest
+    
+    init(request: IRequest) {
+        self.request = request
+    }
+    
+    func getReviewsMovie(page: Int, id: Int, completion: @escaping ((ReviewsModel?, ErrorType?) -> Void)) {
+        request.call(.getReviews(id: id, page: page), bodyParams: [:]) { data, type in
+            if let reviewModel = ReviewsModel.decode(from: data) {
+                completion(reviewModel, nil)
+            }else{
+                completion(nil, type)
+            }
+        }
+    }
+}
