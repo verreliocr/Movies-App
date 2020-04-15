@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navAppearance.tintColor = .black
         navAppearance.setBackgroundImage(UIImage(), for: .default)
         navAppearance.shadowImage = UIImage()
-        navAppearance.titleTextAttributes = [.font: UIFont.boldSystemFont(ofSize: 20)]
+        navAppearance.titleTextAttributes = [.font: UIFont.boldSystemFont(ofSize: 24)]
     }
     
 }

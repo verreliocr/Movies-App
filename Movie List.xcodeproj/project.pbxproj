@@ -46,6 +46,8 @@
 		11B640AE2446FC86006A1F04 /* Extension+CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640AD2446FC86006A1F04 /* Extension+CGFloat.swift */; };
 		11B640B42446FE07006A1F04 /* Extension+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640B32446FE07006A1F04 /* Extension+UICollectionView.swift */; };
 		11B640B62446FE0C006A1F04 /* Extension+UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640B52446FE0C006A1F04 /* Extension+UICollectionViewCell.swift */; };
+		11B640BF2447083D006A1F04 /* MovieItemTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640BD2447083D006A1F04 /* MovieItemTableCell.swift */; };
+		11B640C02447083D006A1F04 /* MovieItemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B640BE2447083D006A1F04 /* MovieItemTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +92,8 @@
 		11B640AD2446FC86006A1F04 /* Extension+CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGFloat.swift"; sourceTree = "<group>"; };
 		11B640B32446FE07006A1F04 /* Extension+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UICollectionView.swift"; sourceTree = "<group>"; };
 		11B640B52446FE0C006A1F04 /* Extension+UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UICollectionViewCell.swift"; sourceTree = "<group>"; };
+		11B640BD2447083D006A1F04 /* MovieItemTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemTableCell.swift; sourceTree = "<group>"; };
+		11B640BE2447083D006A1F04 /* MovieItemTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieItemTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				11B640952446EACC006A1F04 /* List Genres */,
+				11B640B7244703CE006A1F04 /* List Movie */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -208,7 +213,7 @@
 		11B640952446EACC006A1F04 /* List Genres */ = {
 			isa = PBXGroup;
 			children = (
-				11B640A42446F87E006A1F04 /* Table Cells */,
+				11B640A42446F87E006A1F04 /* Collection Cells */,
 				11B640962446EAF9006A1F04 /* ListGenresInterfaces.swift */,
 				11B640982446EB24006A1F04 /* ListGenresViewModel.swift */,
 				11B6409A2446EB31006A1F04 /* ListGenresWireframe.swift */,
@@ -221,11 +226,28 @@
 			path = "List Genres";
 			sourceTree = "<group>";
 		};
-		11B640A42446F87E006A1F04 /* Table Cells */ = {
+		11B640A42446F87E006A1F04 /* Collection Cells */ = {
 			isa = PBXGroup;
 			children = (
 				11B640A52446F8EA006A1F04 /* GenreCollectionCell.swift */,
 				11B640A62446F8EA006A1F04 /* GenreCollectionCell.xib */,
+			);
+			path = "Collection Cells";
+			sourceTree = "<group>";
+		};
+		11B640B7244703CE006A1F04 /* List Movie */ = {
+			isa = PBXGroup;
+			children = (
+				11B640B82447058B006A1F04 /* Table Cells */,
+			);
+			path = "List Movie";
+			sourceTree = "<group>";
+		};
+		11B640B82447058B006A1F04 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				11B640BD2447083D006A1F04 /* MovieItemTableCell.swift */,
+				11B640BE2447083D006A1F04 /* MovieItemTableCell.xib */,
 			);
 			path = "Table Cells";
 			sourceTree = "<group>";
@@ -288,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B640C02447083D006A1F04 /* MovieItemTableCell.xib in Resources */,
 				11348AC72446654C002F47F2 /* LaunchScreen.storyboard in Resources */,
 				11B640A82446F8EA006A1F04 /* GenreCollectionCell.xib in Resources */,
 				11348AC42446654C002F47F2 /* Assets.xcassets in Resources */,
@@ -304,6 +327,7 @@
 			files = (
 				11B640A32446F7E5006A1F04 /* ListGenresModule.swift in Sources */,
 				11B6409B2446EB31006A1F04 /* ListGenresWireframe.swift in Sources */,
+				11B640BF2447083D006A1F04 /* MovieItemTableCell.swift in Sources */,
 				11B6406F244667AE006A1F04 /* Extension+Codable.swift in Sources */,
 				11B640972446EAF9006A1F04 /* ListGenresInterfaces.swift in Sources */,
 				11B6406D244667AE006A1F04 /* Extension+UIViewController.swift in Sources */,

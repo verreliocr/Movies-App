@@ -19,8 +19,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Genre Below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjB-A8-rsI">
+                    <rect key="frame" x="16" y="0.0" width="343" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="zGy-Kg-ITS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Pbp-Vs-Z3c">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="40" width="375" height="627"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="0.0" id="Q5W-H1-to2">
                         <size key="itemSize" width="128" height="128"/>
@@ -48,9 +57,12 @@
                 <constraint firstAttribute="trailing" secondItem="7BT-5w-hwl" secondAttribute="trailing" id="L72-4m-i9r"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pbp-Vs-Z3c" secondAttribute="trailing" id="QD8-Ms-fDP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Pbp-Vs-Z3c" secondAttribute="bottom" id="Reb-v9-vXY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bjB-A8-rsI" secondAttribute="trailing" constant="16" id="U8A-z0-xF4"/>
                 <constraint firstAttribute="bottom" secondItem="7BT-5w-hwl" secondAttribute="bottom" id="enX-Z4-TjC"/>
-                <constraint firstItem="Pbp-Vs-Z3c" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gZi-Y2-dfY"/>
+                <constraint firstItem="Pbp-Vs-Z3c" firstAttribute="top" secondItem="bjB-A8-rsI" secondAttribute="bottom" constant="16" id="fIU-Vl-KbO"/>
+                <constraint firstItem="bjB-A8-rsI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="k1G-yV-qb1"/>
                 <constraint firstItem="7BT-5w-hwl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="oC7-Fy-uXP"/>
+                <constraint firstItem="bjB-A8-rsI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="odL-zp-ehd"/>
                 <constraint firstItem="7BT-5w-hwl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tki-sa-Loe"/>
                 <constraint firstItem="Pbp-Vs-Z3c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="umS-Ni-H6q"/>
             </constraints>
