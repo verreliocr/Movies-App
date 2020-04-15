@@ -93,7 +93,7 @@ extension ListGenresViewController: UICollectionViewDataSource, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = CGSize(width: (UIScreen.main.bounds.width / 2) - 32, height: 40)
+        let size = CGSize(width: (UIScreen.main.bounds.width - 40) / 2, height: 80)
         return size
     }
     

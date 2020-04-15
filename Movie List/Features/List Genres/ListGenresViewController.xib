@@ -20,13 +20,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Pbp-Vs-Z3c">
-                    <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="0.0" id="Q5W-H1-to2">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
                 <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7BT-5w-hwl">
@@ -46,13 +46,13 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="7BT-5w-hwl" secondAttribute="trailing" id="L72-4m-i9r"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pbp-Vs-Z3c" secondAttribute="trailing" constant="16" id="QD8-Ms-fDP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pbp-Vs-Z3c" secondAttribute="trailing" id="QD8-Ms-fDP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Pbp-Vs-Z3c" secondAttribute="bottom" id="Reb-v9-vXY"/>
                 <constraint firstAttribute="bottom" secondItem="7BT-5w-hwl" secondAttribute="bottom" id="enX-Z4-TjC"/>
                 <constraint firstItem="Pbp-Vs-Z3c" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gZi-Y2-dfY"/>
                 <constraint firstItem="7BT-5w-hwl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="oC7-Fy-uXP"/>
                 <constraint firstItem="7BT-5w-hwl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tki-sa-Loe"/>
-                <constraint firstItem="Pbp-Vs-Z3c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="umS-Ni-H6q"/>
+                <constraint firstItem="Pbp-Vs-Z3c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="umS-Ni-H6q"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="-49" y="106"/>
