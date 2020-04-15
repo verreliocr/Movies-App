@@ -29,5 +29,5 @@ protocol IListGenresPresenter {
 }
 
 protocol IListGenresWireframe {
-    func navigateToListMovie(with id: Int)
+    func navigateToListMovie(with id: Int, and name: String)
 }

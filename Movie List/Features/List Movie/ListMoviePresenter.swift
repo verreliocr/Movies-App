@@ -34,7 +34,6 @@ class ListMoviePresenter: IListMoviePresenter {
         interactor.getListMovie(page: viewModel.page, genreId: viewModel.genreId) { [weak self] data, type in
             self?.view?.showLoading(false)
             if let data = data {
-                self?.viewModel.currentPage = data.page ?? 0
                 self?.viewModel.totalPages = data.totalPages ?? 0
                 self?.viewModel.totalElements = data.totalResults ?? 0
                 if appendResult {
@@ -80,12 +79,12 @@ class ListMoviePresenter: IListMoviePresenter {
     func willDisplayCell(at index: Int) {
         if viewModel.allowRequestNextPage, index == getNumberOfRows() - 1, viewModel.movies.count < viewModel.totalElements {
             viewModel.allowRequestNextPage = false
-            let prevPage = viewModel.currentPage
-            viewModel.currentPage += 1
+            let prevPage = viewModel.page
+            viewModel.page += 1
             getListMovie(appendResult: true) { [weak self] error in
                 self?.viewModel.allowRequestNextPage = true
                 if error != nil {
-                    self?.viewModel.currentPage = prevPage
+                    self?.viewModel.page = prevPage
                 }
             }
         }

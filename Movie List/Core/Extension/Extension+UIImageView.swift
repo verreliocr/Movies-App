@@ -21,7 +21,9 @@ extension UIImageView {
                 if let data = data, let response = response, ((response as? HTTPURLResponse)?.statusCode ?? 500) < 300, let image = UIImage(data: data) {
                     let cachedData = CachedURLResponse(response: response, data: data)
                     cache.storeCachedResponse(cachedData, for: request)
-                    self.image = image
+                    DispatchQueue.main.async { [unowned self] in
+                        self.image = image
+                    }
                 }
             }).resume()
         }

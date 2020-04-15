@@ -15,7 +15,9 @@ class ListGenresWireframe: IListGenresWireframe {
         self.appRouter = appRouter
     }
     
-    func navigateToListMovie(with id: Int) {
-        
+    func navigateToListMovie(with id: Int, and name: String) {
+        appRouter.push(module: .listMovies,
+                       using: ["genreId": id,
+                               "genreName": name])
     }
 }

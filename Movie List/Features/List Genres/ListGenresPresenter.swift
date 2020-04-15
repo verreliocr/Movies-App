@@ -58,6 +58,6 @@ class ListGenresPresenter: IListGenresPresenter {
     }
     
     func didSelectGenre(at index: Int) {
-        wireframe.navigateToListMovie(with: viewModel.listGenres[index].id ?? 0)
+        wireframe.navigateToListMovie(with: viewModel.listGenres[index].id ?? 0, and: viewModel.listGenres[index].name ?? "")
     }
 }

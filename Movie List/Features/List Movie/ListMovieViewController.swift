@@ -39,8 +39,8 @@ class ListMovieViewController: UIViewController {
     }
     
     private func setupTableView() {
-        self.tableView.estimatedRowHeight = 200
         self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 200
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register([MovieItemTableCell.self])
@@ -88,10 +88,6 @@ extension ListMovieViewController: UITableViewDataSource, UITableViewDelegate {
                       title: presenter.getTitleMovie(at: indexPath.row),
                       rate: presenter.getRate(at: indexPath.row),
                       overview: presenter.getOverview(at: indexPath.row))
-            
-            cell.didTapExpand = { [weak self] in
-                self?.tableView.reloadRows(at: [indexPath], with: .automatic)
-            }
             return cell
         }
         
