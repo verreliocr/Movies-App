@@ -31,14 +31,28 @@ class DetailMoviePresenter: IDetailMoviePresenter {
     private func getDetailMovie() {
         view?.showLoading(true)
         interactor.getDetailMovie(movieId: viewModel.movieId) { [weak self] data, type in
-            self?.view?.showLoading(false)
             if let data = data {
                 self?.viewModel.detailMovie = data
-                self?.view?.reloadView()
+                self?.getYoutubeVideo()
             }
             if let type = type {
                 self?.view?.handleError(type: type, retryAction: { [weak self] in
                     self?.getDetailMovie()
+                })
+            }
+        }
+    }
+    
+    private func getYoutubeVideo() {
+        interactor.getYoutubeVideo(movieId: viewModel.movieId) { [weak self] data, type in
+            self?.view?.showLoading(false)
+            if let data = data {
+                self?.viewModel.youtubeKey = data.filter({ $0.type?.isTrailer ?? false }).first?.key ?? ""
+                self?.view?.reloadView()
+            }
+            if let type = type {
+                self?.view?.handleError(type: type, retryAction: { [weak self] in
+                    self?.getYoutubeVideo()
                 })
             }
         }
@@ -72,6 +86,10 @@ class DetailMoviePresenter: IDetailMoviePresenter {
     
     func getReleaseDate() -> String {
         return viewModel.detailMovie.releaseDate ?? ""
+    }
+    
+    func getYoutubeKey() -> String {
+        return viewModel.youtubeKey
     }
     
     func didSelectReviews() {

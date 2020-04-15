@@ -17,6 +17,7 @@
                 <outlet property="releaseDateLabel" destination="mPR-Tj-Ad7" id="UO6-7g-hRr"/>
                 <outlet property="titleLabel" destination="DMg-ux-uG5" id="i4X-cY-SeD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="3Vj-MK-Poz" id="OHg-Al-YJW"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -24,6 +25,19 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TiZ-bP-oar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ZZd-7i-K2E">
+                            <rect key="frame" x="169" y="315" width="37" height="37"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.248459507" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ZZd-7i-K2E" firstAttribute="centerY" secondItem="TiZ-bP-oar" secondAttribute="centerY" id="6CY-TW-1Gt"/>
+                        <constraint firstItem="ZZd-7i-K2E" firstAttribute="centerX" secondItem="TiZ-bP-oar" secondAttribute="centerX" id="AZ1-bI-uY5"/>
+                    </constraints>
+                </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHz-un-T5O">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
@@ -80,33 +94,34 @@
                                 </label>
                             </subviews>
                         </stackView>
+                        <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Vj-MK-Poz">
+                            <rect key="frame" x="16" y="387.5" width="343" height="183"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="3Vj-MK-Poz" secondAttribute="height" multiplier="15:8" id="RD7-4z-iXX"/>
+                            </constraints>
+                            <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
+                                <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" video="YES"/>
+                                <wkPreferences key="preferences"/>
+                            </wkWebViewConfiguration>
+                        </wkWebView>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="3Vj-MK-Poz" firstAttribute="leading" secondItem="QHz-un-T5O" secondAttribute="leading" constant="16" id="1x5-r8-TII"/>
+                        <constraint firstAttribute="trailing" secondItem="3Vj-MK-Poz" secondAttribute="trailing" constant="16" id="2oI-Ip-2Ff"/>
                         <constraint firstItem="eZq-MN-NaE" firstAttribute="top" secondItem="QHz-un-T5O" secondAttribute="top" constant="20" id="5oR-72-pB3"/>
+                        <constraint firstAttribute="bottom" secondItem="3Vj-MK-Poz" secondAttribute="bottom" constant="20" id="EzV-Zg-e6D"/>
                         <constraint firstAttribute="trailing" secondItem="7lC-Xi-Zty" secondAttribute="trailing" constant="16" id="FhZ-Nz-RVr"/>
                         <constraint firstItem="eZq-MN-NaE" firstAttribute="leading" secondItem="QHz-un-T5O" secondAttribute="leading" constant="120" id="Jco-ed-ZxM"/>
                         <constraint firstItem="7lC-Xi-Zty" firstAttribute="top" secondItem="eZq-MN-NaE" secondAttribute="bottom" constant="16" id="M3u-Sc-Hyb"/>
                         <constraint firstItem="7lC-Xi-Zty" firstAttribute="centerX" secondItem="QHz-un-T5O" secondAttribute="centerX" id="UG8-Ir-I8c"/>
+                        <constraint firstItem="3Vj-MK-Poz" firstAttribute="top" secondItem="7lC-Xi-Zty" secondAttribute="bottom" constant="16" id="Zq9-KL-Auk"/>
                         <constraint firstAttribute="trailing" secondItem="eZq-MN-NaE" secondAttribute="trailing" constant="120" id="gUO-aL-cHi"/>
                         <constraint firstItem="7lC-Xi-Zty" firstAttribute="leading" secondItem="QHz-un-T5O" secondAttribute="leading" constant="16" id="wMA-PB-9b7"/>
-                        <constraint firstAttribute="bottom" secondItem="7lC-Xi-Zty" secondAttribute="bottom" constant="16" id="zt6-Am-GVO"/>
                     </constraints>
                     <viewLayoutGuide key="contentLayoutGuide" id="Sf1-O6-8Wy"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="LUV-Ah-wu1"/>
                 </scrollView>
-                <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TiZ-bP-oar">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <subviews>
-                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ZZd-7i-K2E">
-                            <rect key="frame" x="169" y="315" width="37" height="37"/>
-                        </activityIndicatorView>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.248459507" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstItem="ZZd-7i-K2E" firstAttribute="centerY" secondItem="TiZ-bP-oar" secondAttribute="centerY" id="6CY-TW-1Gt"/>
-                        <constraint firstItem="ZZd-7i-K2E" firstAttribute="centerX" secondItem="TiZ-bP-oar" secondAttribute="centerX" id="AZ1-bI-uY5"/>
-                    </constraints>
-                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>

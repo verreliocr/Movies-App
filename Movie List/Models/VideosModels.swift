@@ -16,6 +16,10 @@ enum VideoType: String, Codable, CaseIterableDefaultsLast {
     case bts = "Behind the Scenes"
     case bloopers = "Bloopers"
     case unknown
+    
+    var isTrailer: Bool {
+        return self == .trailer
+    }
 }
 
 struct VideosModel: Codable {
@@ -31,7 +35,7 @@ private extension VideosModel {
 }
 
 struct VideosModelResults: Codable {
-    var id: Int?
+    var id: String?
     var key: String?
     var name: String?
     var site: String?

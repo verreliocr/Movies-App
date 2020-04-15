@@ -24,4 +24,14 @@ class DetailMovieInteractor: IDetailMovieInteractor {
             }
         }
     }
+    
+    func getYoutubeVideo(movieId: Int, completion: @escaping (([VideosModelResults]?, ErrorType?) -> Void)) {
+        request.call(.getVideo(id: movieId), bodyParams: [:]) { data, type in
+            if let videoModel = VideosModel.decode(from: data) {
+                completion(videoModel.results, nil)
+            }else{
+                completion(nil, type)
+            }
+        }
+    }
 }

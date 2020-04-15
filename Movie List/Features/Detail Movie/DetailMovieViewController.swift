@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 class DetailMovieViewController: UIViewController {
     
@@ -18,6 +19,7 @@ class DetailMovieViewController: UIViewController {
     @IBOutlet weak var genreLabel: UILabel!
     @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var overviewLabel: UILabel!
+    @IBOutlet weak var webView: WKWebView!
     
     init(presenter: IDetailMoviePresenter) {
         self.presenter = presenter
@@ -51,6 +53,13 @@ extension DetailMovieViewController: IDetailMovieView {
         genreLabel.text = presenter.getGenre()
         releaseDateLabel.text = presenter.getReleaseDate()
         overviewLabel.text = presenter.getOverview()
+        
+        if let url = URL(string: "https://www.youtube.com/embed/\(presenter.getYoutubeKey())") {
+            webView.load(URLRequest(url: url))
+            webView.isHidden = false
+        }else{
+            webView.isHidden = true
+        }
     }
     
     func handleError(type: ErrorType, retryAction: @escaping (() -> Void)) {

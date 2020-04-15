@@ -11,6 +11,7 @@ import Foundation
 class DetailMovieViewModel {
     var movieId: Int
     var detailMovie: DetailMovieModel = DetailMovieModel()
+    var youtubeKey: String = ""
     
     init(movieId: Int) {
         self.movieId = movieId

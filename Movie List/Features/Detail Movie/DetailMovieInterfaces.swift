@@ -17,6 +17,7 @@ protocol IDetailMovieView: class {
 
 protocol IDetailMovieInteractor {
     func getDetailMovie(movieId: Int, completion: @escaping ((DetailMovieModel?, ErrorType?) -> Void))
+    func getYoutubeVideo(movieId: Int, completion: @escaping (([VideosModelResults]?, ErrorType?) -> Void))
 }
 
 protocol IDetailMoviePresenter {
@@ -29,6 +30,7 @@ protocol IDetailMoviePresenter {
     func getGenre() -> String
     func getOverview() -> String
     func getReleaseDate() -> String
+    func getYoutubeKey() -> String
     func didSelectReviews()
 }
 
