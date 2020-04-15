@@ -16,6 +16,8 @@ class MovieItemTableCell: UITableViewCell {
     @IBOutlet weak var overviewLabel: UILabel!
     @IBOutlet weak var expandButton: UIButton!
     
+    var didTapExpand: (() -> Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         expandButton.addAction { [unowned self] in
@@ -23,8 +25,13 @@ class MovieItemTableCell: UITableViewCell {
         }
     }
     
-    func bind(imageUrl: URL, title: String, rate: Double, overview: String) {
-        thumbnailImageView.setImage(url: imageUrl, placeholder: nil)
+    func bind(imageUrl: URL?, title: String, rate: Double, overview: String) {
+        if let url = imageUrl {
+            thumbnailImageView.setImage(url: url, placeholder: nil)
+            thumbnailImageView.isHidden = false
+        }else{
+            thumbnailImageView.isHidden = true
+        }
         titleLabel.text = title
         rateLabel.setTitle(rate.description, for: .normal)
         overviewLabel.text = overview
@@ -38,6 +45,7 @@ class MovieItemTableCell: UITableViewCell {
             overviewLabel.isHidden = true
             expandButton.setImage(UIImage(systemName: "arrowtriangle.up"), for: .normal)
         }
+        didTapExpand?()
     }
     
 }

@@ -11,11 +11,14 @@ import UIKit
 
 enum FeatureModule {
     case listGenres
+    case listMovies
 
     func create(using router: IRouter) -> IModule {
         switch self {
         case .listGenres:
             return ListGenresModule(appRouter: router)
+        case .listMovies:
+            return ListMovieModule(appRouter: router)
         }
     }
 }

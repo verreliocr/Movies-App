@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+class ListMovieInteractor: IListMovieInteractor {
+    let request: IRequest
+    
+    init(request: IRequest) {
+        self.request = request
+    }
+    
+    func getListMovie(page: Int, genreId: Int, completion: @escaping ((ListMovieModel?, ErrorType?) -> Void)) {
+        request.call(.getDiscoverMovie(page: page, genreId: genreId), bodyParams: [:]) { data, type in
+            if let genreModel = ListMovieModel.decode(from: data) {
+                completion(genreModel, nil)
+            }else{
+                completion(nil, type)
+            }
+        }
+    }
+}

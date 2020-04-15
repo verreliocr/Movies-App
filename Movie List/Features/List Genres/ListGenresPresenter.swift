@@ -26,10 +26,10 @@ class ListGenresPresenter: IListGenresPresenter {
     }
     
     func viewWillAppear() {
-        getListContacts()
+        getListGenres()
     }
     
-    private func getListContacts() {
+    private func getListGenres() {
         view?.showLoading(true)
         interactor.getListGenres { [weak self] data, type in
             self?.view?.showLoading(false)
@@ -39,7 +39,7 @@ class ListGenresPresenter: IListGenresPresenter {
             }
             if let type = type {
                 self?.view?.handleError(type: type, retryAction: { [weak self] in
-                    self?.getListContacts()
+                    self?.getListGenres()
                 })
             }
         }

@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+class ListMovieViewModel {
+    var genreId: Int
+    var genreName: String
+    var page: Int = 1
+    var currentPage: Int = 0
+    var totalPages: Int = 0
+    var totalElements: Int = 0
+    var allowRequestNextPage: Bool = true
+    var movies: [ListMovieModelResult] = []
+    
+    init(genreId: Int, genreName: String) {
+        self.genreId = genreId
+        self.genreName = genreName
+    }
+}

@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class ListMovieWireframe: IListMovieWireframe {
+    let appRouter: IRouter
+    
+    init(appRouter: IRouter) {
+        self.appRouter = appRouter
+    }
+    
+    func navigateToDetailMovie(with id: Int) {
+        
+    }
+}

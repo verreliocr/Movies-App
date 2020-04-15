@@ -26,7 +26,7 @@ private extension ListMovieModel {
 
 struct ListMovieModelResult: Codable {
     var id: Int?
-    var posterPath: String?
+    var backdropPath: String?
     var title: String?
     var voteAverage: Double?
     var overview: String?
@@ -36,7 +36,7 @@ struct ListMovieModelResult: Codable {
 private extension ListMovieModelResult {
     enum CodingKeys: String, CodingKey {
         case id = "id"
-        case posterPath = "poster_path"
+        case backdropPath = "backdrop_path"
         case title = "title"
         case voteAverage = "vote_average"
         case overview = "overview"
